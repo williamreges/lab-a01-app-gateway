@@ -11,7 +11,7 @@ Esse projeto é um exemplo de laboratório que simula operações de pagamentos 
 para a Api Rest [lab-a01-app-bff-payment ](https://github.com/williamreges/lab-a01-app-bff-payment.git). 
 Essa Api nada mais é que uma peça que redireciona PATHs e URL dentro do Eureka Server. 
 Do Angular é feito uma requisição para o Api Gateway que por sua vez cria rota para o **BFF** que também por sua vez faz
-requisições Rest ao **back-end**[lab-a01-app-repository-payment](https://github.com/williamreges/lab-a01-app-repository-payment.git) 
+requisições Rest ao **back-end** [lab-a01-app-repository-payment](https://github.com/williamreges/lab-a01-app-repository-payment.git) 
 utilizando [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign) como ferramenta de integração.
 E para complementar essa Api Gateway trabalha se registra no [Service Registration and Discovery](https://spring.io/guides/gs/service-registration-and-discovery)
 como o Eureka.
