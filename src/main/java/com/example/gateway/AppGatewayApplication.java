@@ -1,4 +1,4 @@
-package com.example.lab_a01_app_gateway;
+package com.example.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
