@@ -17,7 +17,7 @@ public class RouterConfig {
                         .filters(f -> f.addRequestHeader("Hello", "World")) // add header
                         .uri("http://httpbin.org:80"))// forward to httpbin
                 .route(p -> p.path("/transacao-pix/**")
-                        .uri(""))
+                        .uri("lb://app-bff-payment"))
                 .build();
     }
 
