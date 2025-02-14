@@ -14,9 +14,13 @@ public class RouterConfig {
                 // Add a simple "Hello:World" HTTP Header
                 .route(p -> p
                         .path("/get") // intercept calls to the /get path
-                        .filters(f -> f.addRequestHeader("Hello", "World")) // add header
+                        .filters(f -> f
+                                .addRequestHeader("Hello", "World")) // add header
                         .uri("http://httpbin.org:80"))// forward to httpbin
-                .route(p -> p.path("/transacao-pix/**")
+                .route(p -> p
+                        .path("/transacao-pix/**")
+                        .filters(f -> f
+                                .mapRequestHeader("correlationID", "correlationID"))
                         .uri("lb://app-bff-payment"))
                 .build();
     }
