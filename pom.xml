@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>lab-a01-app-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>app-gateway</name>
+	<name>lab-a01-app-gateway</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<properties>
@@ -35,7 +35,14 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-tracing-bridge-brave</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.zipkin.reporter2</groupId>
+			<artifactId>zipkin-reporter-brave</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
